@@ -20,58 +20,66 @@
 
     <form class="registration-form" name="registration">
         <div class="choice-popup">
+            <div class="check-box-wrapper">
+                <span class="check-box-error"></span>
+             <div>
+                <label class="position-checkbox-label">
+                    <i class="material-icons prefix">person</i>
+                    <input type="checkbox" class="filled-in position-checkbox"/>
+                    <span>Я снонсор</span>
+                  </label>
+                  <label  class="position-checkbox-label">
+                    <i class="material-icons prefix">people</i>
+                    <input type="checkbox" class="filled-in position-checkbox"/>
+                    <span>Я волонтер</span>
+                  </label>
+             </div>
+            </div>
+            
             <div class="input-field col s12">
                 <i class="material-icons prefix">account_circle</i>
                 <input id="first_name" type="text" class="validate custom-field">
-                <label for="first_name">Frist Name</label>
+                <label for="first_name">Ваше имя</label>
                 <span class="helper-text" data-error=""></span>
             </div>
               <div class="input-field col s12">
                 <i class="material-icons prefix">account_circle</i>
                 <input id="last_name" type="text" class="validate custom-field">
-                <label for="last_name">Last Name</label>
+                <label for="last_name">Ваша фамилия</label>
                 <span class="helper-text" data-error=""></span>
               </div>
               <div class="input-field col s12">
                 <i class="material-icons prefix">account_circle</i>
                 <input id="patronic_name" type="text" class="validate custom-field">
-                <label for="patronic_name">Patroic Name</label>
+                <label for="patronic_name">Ваше Отчество</label>
                 <span class="helper-text" data-error=""></span>
               </div>
 
               <div class="input-field col s12">
                   <i class="material-icons prefix">email</i>
                 <input id="email_inline" type="email" class="validate custom-field">
-                <label for="email_inline">Email</label>
+                <label for="email_inline">Ваш Email</label>
                 <span class="helper-text" data-error="не существующий"></span>
               </div>
             
               <div class="input-field col s12">
                 <i class="material-icons prefix">phone</i>
                 <input id="phone" type="tel" class="validate custom-field">
-                <label for="phone">Telephone</label>
+                <label for="phone">Ваш телефон</label>
                 <span class="helper-text" data-error=""></span>
               </div>
 
                     <div class="input-field col s12">
+                  <i class="material-icons prefix">message</i>
+
                       <textarea id="comment-field" class="validate materialize-textarea custom-field"></textarea>
-                      <label for="comment-field">You comment</label>
+                      <label for="comment-field">Комментарий</label>
                       <span class="helper-text" data-error=""></span>
               </div>
 
-           <div class="check-box-wrapper">
-               <span class="check-box-error"></span>
-            <label class="position-checkbox-label">
-                <input type="checkbox" class="filled-in position-checkbox"/>
-                <span>I am sponsor</span>
-              </label>
-              <label  class="position-checkbox-label">
-                <input type="checkbox" class="filled-in position-checkbox"/>
-                <span>I am volonter</span>
-              </label>
-           </div>
 
-              <a class="waves-effect waves-light btn submit-btn">Submit</a>
+
+              <a class="waves-effect waves-light btn submit-btn">Отправить</a>
         </div>
     </div>
 <script>

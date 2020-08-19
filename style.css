@@ -47,10 +47,18 @@
     padding-left: 15px !important;
 }
 
+.check-box-wrapper{
+    margin-bottom: 30px;
+}
+
 .position-checkbox-label {
-    display: block;
     margin-bottom: 10px;
 }
+
+.position-checkbox-label:not(:first-child) {
+    margin-left: 20px;
+}
+
 
 .check-box-error {
     color: #F44336;
@@ -62,4 +70,6 @@
     margin: auto;
     max-width: 150px;
     margin-top: 40px;
+
+    background-color: #62d65c;
 }
