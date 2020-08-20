@@ -89,14 +89,10 @@
     const submitBtn = document.querySelector('.submit-btn');
     const submitBtncheckBoxWrapper = document.querySelector('.check-box-wrapper');
 
-    ///
-
     const firstName = document.querySelector('#first_name');
     const lastName = document.querySelector('#last_name');
-    const patronictName = document.querySelector('#patronic_name');
     const email = document.querySelector('#email_inline');
     const phone = document.querySelector('#phone');
-    const comment = document.querySelector('#comment-field');
 
     const checkBoxError = document.querySelector('.check-box-error');
 
@@ -113,11 +109,9 @@
         
         handleValidate(firstName, ['length-validation']);
         handleValidate(lastName, ['length-validation']);
-        handleValidate(patronictName, ['length-validation']);
 
         handleValidate(email, ['length-validation', 'email-validation']);
         handleValidate(phone, ['length-validation']);
-        handleValidate(comment, ['length-validation']);
 
         handleValidate(null, ['checkbox-validation']);
 
