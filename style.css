@@ -75,7 +75,10 @@
 
 .check-box-error {
     color: #F44336;
-    font-size: 12pxx;
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+    display: block;
 }
 
 .submit-btn {
