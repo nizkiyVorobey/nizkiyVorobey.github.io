@@ -156,7 +156,7 @@
         } else {
             field.classList.remove('valid');
             field.classList.add('invalid');
-            field.parentNode.querySelector('span').setAttribute("data-error", "This filed is required");
+            field.parentNode.querySelector('span').setAttribute("data-error", "Это полк обязательное");
 
             return false
         }
@@ -173,7 +173,7 @@
        }
        field.classList.remove('valid');
             field.classList.add('invalid');
-            field.parentNode.querySelector('span').setAttribute("data-error", "This filed must be email");
+            field.parentNode.querySelector('span').setAttribute("data-error", "Не валидный email");
 
             return false
     }
