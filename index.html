@@ -24,11 +24,11 @@
                 <p class="checkbox-wrapper-title">Я хочу присоедениться как</p>
              <div class="position-checkbox-wrapper">
                 <label class="position-checkbox-label">
-                    <input type="checkbox" class="filled-in position-checkbox"/>
+                    <input name="group1" type="radio" class="position-checkbox" />
                     <span>Спонсор</span>
                   </label>
-                  <label  class="position-checkbox-label">
-                    <input type="checkbox" class="filled-in position-checkbox"/>
+                  <label class="position-checkbox-label">
+                    <input name="group1" type="radio" class="position-checkbox" />
                     <span>Волонтер</span>
                   </label>
              </div>
@@ -175,7 +175,7 @@ const checkboxValidate = () => {
     const valid = [...checkBoxes].some(item => item.checked);
 
     if (valid) {
-        checkBoxError.classList.add('validß');
+        checkBoxError.classList.add('valid');
         checkBoxError.classList.remove('invalid');
         checkBoxError.innerHTML = ""
     } else {
