@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+       <!-- Compiled and minified CSS -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+       rel="stylesheet">
+       <!-- Compiled and minified JavaScript -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="style.css">
 
     <title>Document</title>
 </head>
-
 <body>
-
-
 
     <a class="waves-effect waves-light btn join-btn">Присоедениться</a>
 
@@ -25,191 +22,169 @@
         <div class="choice-popup">
             <div class="check-box-wrapper">
                 <p class="checkbox-wrapper-title">Я хочу присоедениться как</p>
-                <div class="position-checkbox-wrapper">
-                    <label class="position-checkbox-label">
-                        <input name="position" type="radio" class="position-checkbox" />
-                        <span>Меценат</span>
-                    </label>
-                    <label class="position-checkbox-label">
-                        <input name="position" type="radio" class="position-checkbox" />
-                        <span>Волонтер</span>
-                    </label>
-                </div>
-                <span class="check-box-error"></span>
+             <div class="position-checkbox-wrapper">
+                <label class="position-checkbox-label">
+                    <input name="position" type="radio" class="position-checkbox" />
+                    <span>Меценат</span>
+                  </label>
+                  <label class="position-checkbox-label">
+                    <input name="position" type="radio" class="position-checkbox" />
+                    <span>Волонтер</span>
+                  </label>
+             </div>
+             <span class="check-box-error"></span>
             </div>
-
+            
             <div class="input-field col s12">
                 <i class="material-icons prefix">account_circle</i>
                 <input id="first_name" name="first_name" type="text" class="validate custom-field">
                 <label for="first_name">Ваше имя</label>
                 <span class="helper-text" data-error=""></span>
             </div>
-            <div class="input-field col s12">
+              <div class="input-field col s12">
                 <i class="material-icons prefix">account_circle</i>
                 <input id="last_name" name="last_name" type="text" class="validate custom-field">
                 <label for="last_name">Ваша фамилия</label>
                 <span class="helper-text" data-error=""></span>
-            </div>
-            <div class="input-field col s12">
+              </div>
+              <div class="input-field col s12">
                 <i class="material-icons prefix">account_circle</i>
                 <input id="patronic_name" name="patronic_name" type="text" class="validate custom-field">
                 <label for="patronic_name">Ваше отчество</label>
                 <span class="helper-text" data-error=""></span>
-            </div>
+              </div>
 
-            <div class="input-field col s12">
-                <i class="material-icons prefix">email</i>
+              <div class="input-field col s12">
+                  <i class="material-icons prefix">email</i>
                 <input id="email_inline" name="email" type="email" class="validate custom-field">
                 <label for="email_inline">Ваш Email</label>
                 <span class="helper-text" data-error="не существующий"></span>
-            </div>
-
-            <div class="input-field col s12">
+              </div>
+            
+              <div class="input-field col s12">
                 <i class="material-icons prefix">phone</i>
                 <input id="phone" name="phone" type="tel" class="validate custom-field">
                 <label for="phone">Ваш телефон</label>
                 <span class="helper-text" data-error=""></span>
-            </div>
+              </div>
 
-            <div class="input-field col s12">
-                <i class="material-icons prefix">message</i>
+                    <div class="input-field col s12">
+                  <i class="material-icons prefix">message</i>
 
-                <textarea id="comment-field" phone="comment"
-                    class="validate materialize-textarea custom-field"></textarea>
-                <label for="comment-field">Комментарий</label>
-                <span class="helper-text" data-error=""></span>
-            </div>
-
+                      <textarea id="comment-field" phone="comment" class="validate materialize-textarea custom-field"></textarea>
+                      <label for="comment-field">Комментарий</label>
+                      <span class="helper-text" data-error=""></span>
+              </div>
 
 
-            <a class="waves-effect waves-light btn submit-btn">Отправить</a>
+
+              <a class="waves-effect waves-light btn submit-btn">Отправить</a>
         </div>
-        </div>
-        <script>
+    </div>
+<script>
 
-            const coicePopup = document.querySelector('.choice-popup');
-            const sponsorBtn = document.querySelector('.sponsor-btn');
-            const volonterBtn = document.querySelector('.volonter-btn');
-            const joinBtn = document.querySelector('.join-btn');
-            const submitBtn = document.querySelector('.submit-btn');
-            const submitBtncheckBoxWrapper = document.querySelector('.check-box-wrapper');
+    const coicePopup = document.querySelector('.choice-popup');
+    const sponsorBtn = document.querySelector('.sponsor-btn');
+    const volonterBtn = document.querySelector('.volonter-btn');
+    const joinBtn = document.querySelector('.join-btn');
+    const submitBtn = document.querySelector('.submit-btn');
+    const submitBtncheckBoxWrapper = document.querySelector('.check-box-wrapper');
 
-            const firstName = document.querySelector('#first_name');
-            const lastName = document.querySelector('#last_name');
-            const email = document.querySelector('#email_inline');
-            const phone = document.querySelector('#phone');
+    const firstName = document.querySelector('#first_name');
+    const lastName = document.querySelector('#last_name');
+    const email = document.querySelector('#email_inline');
+    const phone = document.querySelector('#phone');
 
-            const checkBoxError = document.querySelector('.check-box-error');
+    const checkBoxError = document.querySelector('.check-box-error');
 
-            const validList = [];
+    const validList = [];
 
-            joinBtn.addEventListener("click", () => {
-                coicePopup.classList.add("slide-up")
-            })
+    joinBtn.addEventListener("click", () => {
+        coicePopup.classList.add("slide-up")
+    })
 
-            const checkBoxes = document.querySelectorAll('.position-checkbox');
+    const checkBoxes = document.querySelectorAll('.position-checkbox');
 
-            submitBtn.addEventListener("click", (event) => {
-                validList.length = 0;
+    submitBtn.addEventListener("click", (event) => {
+        validList.length = 0;
+        
+        handleValidate(firstName, ['length-validation']);
+        handleValidate(lastName, ['length-validation']);
 
-                handleValidate(firstName, ['length-validation']);
-                handleValidate(lastName, ['length-validation']);
+        handleValidate(email, ['length-validation', 'email-validation']);
+        handleValidate(phone, ['length-validation']);
 
-                handleValidate(email, ['length-validation', 'email-validation']);
-                handleValidate(phone, ['length-validation']);
+        handleValidate(null, ['checkbox-validation']);
 
-                handleValidate(null, ['checkbox-validation']);
+        const canSendForm = validList.some(item => item)
 
-                const canSendForm = validList.some(item => item)
+        if (canSendForm) { // SEND OUR FORM
+            const form = document.querySelector('registration-form');
+            formData = new FormData(form)
+        }
 
-                if (canSendForm) { // SEND OUR FORM
-                    const form = document.querySelector('registration-form');
-                    formData = new FormData(form)
-                }
+    })
 
-            })
+    const handleValidate = (field, extraValidation) => {
+        if (extraValidation.includes('length-validation')) {
+            validList.push(lengthValidation(field.value, field))
+        }
+        
+        if (extraValidation.includes('email-validation')) {
+            validList.push(enailValidate(field.value, field))
+        }
 
-            const handleValidate = (field, extraValidation) => {
-                if (extraValidation.includes('length-validation')) {
-                    validList.push(lengthValidation(field.value, field))
-                }
+        if (extraValidation.includes('checkbox-validation')) {
+            validList.push(checkboxValidate())
+        }
 
-                if (extraValidation.includes('email-validation')) {
-                    validList.push(enailValidate(field.value, field))
-                }
+    }
 
-                if (extraValidation.includes('checkbox-validation')) {
-                    validList.push(checkboxValidate())
-                }
+    const lengthValidation = (value, field) => {
+        if (value.trim().length) {
+            field.classList.add('valid');
+            field.classList.remove('invalid');
 
-            }
+            return true
+        } else {
+            field.classList.remove('valid');
+            field.classList.add('invalid');
+            field.parentNode.querySelector('span').setAttribute("data-error", "Это поле обязательное");
 
-            const lengthValidation = (value, field) => {
-                if (value.trim().length) {
-                    field.classList.add('valid');
-                    field.classList.remove('invalid');
+            return false
+        }
+    }
 
-                    return true
-                } else {
-                    field.classList.remove('valid');
-                    field.classList.add('invalid');
-                    field.parentNode.querySelector('span').setAttribute("data-error", "Это поле обязательное");
+    const enailValidate = (value, field) => {
+        const pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-                    return false
-                }
-            }
+       if (pattern.test(value)) {
+        field.classList.add('valid');
+            field.classList.remove('invalid');
 
-            const enailValidate = (value, field) => {
-                const pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return true
+       }
+       field.classList.remove('valid');
+            field.classList.add('invalid');
+            field.parentNode.querySelector('span').setAttribute("data-error", "Не валидный email");
 
-                if (pattern.test(value)) {
-                    field.classList.add('valid');
-                    field.classList.remove('invalid');
+            return false
+    }
 
-                    return true
-                }
-                field.classList.remove('valid');
-                field.classList.add('invalid');
-                field.parentNode.querySelector('span').setAttribute("data-error", "Не валидный email");
+const checkboxValidate = () => {
+    const valid = [...checkBoxes].some(item => item.checked);
 
-                return false
-            }
-
-            const checkboxValidate = () => {
-                const valid = [...checkBoxes].some(item => item.checked);
-
-                if (valid) {
-                    checkBoxError.classList.add('valid');
-                    checkBoxError.classList.remove('invalid');
-                    checkBoxError.innerHTML = ""
-                } else {
-                    checkBoxError.classList.add('invalid');
-                    checkBoxError.classList.remove('valid');
-                    checkBoxError.innerHTML = "Вы должны выбрать хотя бы одну позицию";
-                }
-            }
-
-        </script>
-
-
-        <script>
-
-            (function (d, options) {
-                var js = d.createElement('script');
-                js.type = "text/javascript";
-                // js.src = "https://interpreter.getbw.me/api/widget/init.js?api_key=" + options.apiKey;
-                js.src = "https://interpreter.getbw.me/test";
-                js.onload = function () {
-                    window.SLInterpreter.init(options);
-                };
-                d.body.appendChild(js);
-            })(document, {
-                apiKey: 'a78a960d120f8102bae23f3a44a59015',
-                fullScreen: true,
-                canToggleMic: true,
-            });
-
-        </script>
+    if (valid) {
+        checkBoxError.classList.add('valid');
+        checkBoxError.classList.remove('invalid');
+        checkBoxError.innerHTML = ""
+    } else {
+        checkBoxError.classList.add('invalid');
+        checkBoxError.classList.remove('valid');
+        checkBoxError.innerHTML = "Вы должны выбрать хотя бы одну позицию";
+    }
+}
+    
+</script>
 </body>
-
 </html>
